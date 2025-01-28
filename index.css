@@ -1,0 +1,197 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149009911.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: #cccccc;
+  }
+
+c { 
+    color: black;
+    text-align:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    
+}
+p { 
+    color: black;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+p1 { 
+  color: black;
+  text-align:center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+p2 { 
+  color: black;
+  text-align:center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+p3 { 
+  color: black;
+  text-align:center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+p { 
+    color: black;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+.image1{ /* Image boarding. */
+    width: 300px;
+    height: 200px;
+
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image2{
+    width: 735px;
+    height: 414px;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image3{
+    width: 144px;
+    height: 144px;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image4{
+    background-color: black;
+    width: 1000px;
+    height: 750px;
+    border: 5px solid gold;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+
+  .typewriter1 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    animation-delay: 2s;
+  }
+
+.typewriter2 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      animation-delay: 4s;
+  }
+
+.typewriter3 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      animation-delay: 6s;
+  }
+
+.typewriter4 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      animation-delay: 8s;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+/* ul {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    background-color: rgb(122, 119, 119);
+    border: 5px solid rgba(255, 217, 0, 0.582);
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.ulnav {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+  }
+
+table {
+    font-family: arial, sans-serif;
+    background-color: rgb(185, 182, 182);
+    border-collapse: collapse;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    width:840px;
+    height:630px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+} */
+
