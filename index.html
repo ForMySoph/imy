@@ -1,28 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!--CSS stuff-->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149009911.jpg?w=2000");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #F8E1F4;
+            font-family: 'Times New Roman', Times, serif;
+            color: #5D1F8E;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #B83C7E;
+            font-family: 'Impact', Haettenschweiler, sans-serif;
+        }
+
+        p {
+            font-size: 18px;
+            color: #5D1F8E;
+        }
+
+        input {
+            padding: 10px;
+            margin: 20px 0;
+            width: 100%;
+            font-size: 16px;
+            border: 2px solid #B83C7E;
+            border-radius: 10px;
+            background-color: #F8E1F4;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #B83C7E;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #D56AB6;
+        }
+
+        .heart-icon {
+            font-size: 50px;
+            color: #D56AB6;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .typewriter {
+            font-size: 20px;
+            color: #D56AB6;
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+            border-right: 3px solid orange;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+    </style>
 </head>
-	
-	<div class="card">
-		<div class="imgBox">
-			<div class="bark"></div>
-			<img src="image.png">
-		</div>
-		<div class="details">
-			<h4 class="color1">Happy Bday Again My Love</h2>
-<!-- 			<h4 class="color2 margin">Y Prospero Año 2023</h3> -->
-			<p>I just wanted to say how much </p>
-			<p>I miss you. You’re always on my</p>
-			<p>mind, no matter what. And it’s hard</p>
-			<p>not having you around. I care about</p>
-			<p>you and want the best for you. You</p>
-			<p>deserve all the happiness in the world.</p>
-			<p>I miss you deeply and hope that</p>
-			<p>someday we can meet again.</p>
-			<p></p>
-			<p class="text-right">I miss you,</p>
-			<p class="text-right"></p>
-			<p class="text-right">-Abdias</p>
-			<!-- <p><a href="index2.html">Go to Next Page</a></p> -->
-		</div>
-	</div>
+<body>
+    <div class="container">
+        <h1>Welcome to My Secure Site</h1>
+        <p class="typewriter">Enter the password to unlock.</p>
+        <div class="heart-icon">❤️</div>
+        <form id="passwordForm">
+            <label for="password">Password: What is the name of my favorite cat?</label><br>
+            <input type="text" id="password" placeholder="Enter the password" required>
+            <br>
+            <button type="button" onclick="checkPassword(event)">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function checkPassword(event) {
+            // Prevent form submission from causing a reload
+            event.preventDefault();
+
+            var password = document.getElementById("password").value;
+
+            // Check if the password is correct (case-sensitive comparison)
+            if (password === "koshka" || password === "Koshka") {
+                window.location.href = "index1.html"; // Redirect to index1.html if correct
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
